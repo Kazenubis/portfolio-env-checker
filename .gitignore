@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+.idea/
+.vscode/
+.DS_Store
+
+# This project's whole point is comparing .env.example against .env, so its
+# test fixtures intentionally check in fake .env files (dummy placeholder
+# values only — no real credentials). Everything outside fixtures/ still
+# ignores real .env files as usual.
+.env
+!fixtures/**/.env
